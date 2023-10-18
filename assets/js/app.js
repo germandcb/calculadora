@@ -72,8 +72,9 @@ function sumar() {
     limpiar();
 }
 function restar() {
+    a = pantalla.value;
     console.log(a);
-    if (a == undefined) {
+    if (a == '') {
         pantalla.value = pantalla.value + "-"
     } else {
         a = pantalla.value;
