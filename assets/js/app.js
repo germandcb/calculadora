@@ -72,10 +72,15 @@ function sumar() {
     limpiar();
 }
 function restar() {
-    a = pantalla.value;
-    operacion = "-";
-    tipoOperacion.value = operacion;
-    limpiar();
+    console.log(a);
+    if (a == undefined) {
+        pantalla.value = pantalla.value + "-"
+    } else {
+        a = pantalla.value;
+        operacion = "-";
+        tipoOperacion.value = operacion;
+        limpiar();
+    }
 }
 function multiplicar() {
     a = pantalla.value;
